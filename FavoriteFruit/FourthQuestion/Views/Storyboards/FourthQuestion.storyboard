@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ipU-su-jeg">
+    <device id="ipad11_0rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fourth Question View Controller-->
+        <scene sceneID="2Gv-xk-uih">
+            <objects>
+                <viewController id="ipU-su-jeg" customClass="FourthQuestionViewController" customModule="FavoriteFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nH8-K3-QWe">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="dMu-dh-inZ">
+                                <rect key="frame" x="32" y="88" width="1130" height="682"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourth_question" translatesAutoresizingMaskIntoConstraints="NO" id="DGx-qf-qcR">
+                                        <rect key="frame" x="0.0" y="0.0" width="1130" height="526"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたが選んだフルーツはある？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCG-hK-3yc">
+                                        <rect key="frame" x="0.0" y="558" width="1130" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124" id="9TF-tU-sxJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dMu-dh-inZ" firstAttribute="top" secondItem="lPx-1i-bHh" secondAttribute="top" constant="64" id="BXC-8C-Yrl"/>
+                            <constraint firstItem="dMu-dh-inZ" firstAttribute="leading" secondItem="lPx-1i-bHh" secondAttribute="leading" constant="32" id="JaK-FS-w7R"/>
+                            <constraint firstItem="lPx-1i-bHh" firstAttribute="trailing" secondItem="dMu-dh-inZ" secondAttribute="trailing" constant="32" id="efC-8b-Fnw"/>
+                            <constraint firstAttribute="bottom" secondItem="dMu-dh-inZ" secondAttribute="bottom" constant="64" id="mrF-98-1ea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lPx-1i-bHh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hN1-a5-Jnn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fourth_question" width="849" height="833"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agc-fZ-0JN">
+    <device id="ipad11_0rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second Question View Controller-->
+        <scene sceneID="qxp-BL-fki">
+            <objects>
+                <viewController id="agc-fZ-0JN" customClass="SecondQuestionViewController" customModule="FavoriteFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M09-et-Xow">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="rf8-Hg-Vmh">
+                                <rect key="frame" x="64" y="56" width="1066" height="746"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="second_question" translatesAutoresizingMaskIntoConstraints="NO" id="fT8-uu-7Hw">
+                                        <rect key="frame" x="0.0" y="0.0" width="1066" height="590"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたが選んだフルーツはある？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDx-4Y-dlR">
+                                        <rect key="frame" x="0.0" y="622" width="1066" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124" id="zfx-uF-4z3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rf8-Hg-Vmh" firstAttribute="top" secondItem="aID-0q-3Ba" secondAttribute="top" constant="32" id="Fro-Xc-y2n"/>
+                            <constraint firstItem="rf8-Hg-Vmh" firstAttribute="leading" secondItem="aID-0q-3Ba" secondAttribute="leading" constant="64" id="ak3-mk-P0o"/>
+                            <constraint firstAttribute="bottom" secondItem="rf8-Hg-Vmh" secondAttribute="bottom" constant="32" id="cFa-UE-P6B"/>
+                            <constraint firstItem="aID-0q-3Ba" firstAttribute="trailing" secondItem="rf8-Hg-Vmh" secondAttribute="trailing" constant="64" id="d9H-w4-IaG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aID-0q-3Ba"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37j-49-1t8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second_question" width="918" height="824"/>
+    </resources>
+</document>
