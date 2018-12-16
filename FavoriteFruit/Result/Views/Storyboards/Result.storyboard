@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nqd-DS-v1F">
+    <device id="ipad11_0rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="1eS-Vq-0CN">
+            <objects>
+                <viewController id="NMn-TY-z8P" customClass="ResultViewController" customModule="FavoriteFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RXR-dY-Zfk">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="xeK-MH-Ba1">
+                                <rect key="frame" x="64" y="138" width="1066" height="612"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="3Xf-69-DOu">
+                                        <rect key="frame" x="0.0" y="0.0" width="1066" height="458"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さくらんぼ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW6-hr-b3t">
+                                        <rect key="frame" x="0.0" y="522" width="1066" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="dnu-c0-LjJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="74"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EHV-2d-t1h" firstAttribute="bottom" secondItem="xeK-MH-Ba1" secondAttribute="bottom" constant="64" id="1kA-Rz-71M"/>
+                            <constraint firstItem="EHV-2d-t1h" firstAttribute="trailing" secondItem="xeK-MH-Ba1" secondAttribute="trailing" constant="64" id="GIl-eB-kYe"/>
+                            <constraint firstItem="xeK-MH-Ba1" firstAttribute="leading" secondItem="EHV-2d-t1h" secondAttribute="leading" constant="64" id="nG4-fe-LAg"/>
+                            <constraint firstItem="xeK-MH-Ba1" firstAttribute="top" secondItem="EHV-2d-t1h" secondAttribute="top" constant="64" id="qD2-Cl-BPb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EHV-2d-t1h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ca2-PB-Fo6">
+                        <barButtonItem key="rightBarButtonItem" title="閉じる" id="y4c-KT-VvO">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="closeButtonDidTap:" destination="NMn-TY-z8P" id="w3d-4D-uu4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="resultImageView" destination="3Xf-69-DOu" id="JBE-9j-GLE"/>
+                        <outlet property="resultLabel" destination="rW6-hr-b3t" id="gKO-yT-hne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0W5-kf-4fV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.1959798994975" y="133.81294964028777"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3a0-oP-IHQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nqd-DS-v1F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XYp-iQ-9e3">
+                        <rect key="frame" x="0.0" y="24" width="1194" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NMn-TY-z8P" kind="relationship" relationship="rootViewController" id="uxc-EC-5hT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Yq-mb-HVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cherry" width="46.080001831054688" height="46.080001831054688"/>
+    </resources>
+</document>

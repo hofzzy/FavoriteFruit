@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="78S-W1-1ee">
+    <device id="ipad11_0rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third Question View Controller-->
+        <scene sceneID="0h0-MS-Fhq">
+            <objects>
+                <viewController id="78S-W1-1ee" customClass="ThirdQuestionViewController" customModule="FavoriteFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JZm-mf-dZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="t16-mn-svk">
+                                <rect key="frame" x="32" y="88" width="1130" height="682"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="third_question" translatesAutoresizingMaskIntoConstraints="NO" id="z0K-LN-lh3">
+                                        <rect key="frame" x="0.0" y="0.0" width="1130" height="526"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたが選んだフルーツはある？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsG-9H-y1k">
+                                        <rect key="frame" x="0.0" y="558" width="1130" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124" id="cp0-rW-2dk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UPL-3Y-O4l" firstAttribute="trailing" secondItem="t16-mn-svk" secondAttribute="trailing" constant="32" id="9Ps-Cn-N8B"/>
+                            <constraint firstAttribute="bottom" secondItem="t16-mn-svk" secondAttribute="bottom" constant="64" id="BA0-5E-t7B"/>
+                            <constraint firstItem="t16-mn-svk" firstAttribute="top" secondItem="UPL-3Y-O4l" secondAttribute="top" constant="64" id="X06-Bj-PLl"/>
+                            <constraint firstItem="t16-mn-svk" firstAttribute="leading" secondItem="UPL-3Y-O4l" secondAttribute="leading" constant="32" id="uos-6q-eBG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UPL-3Y-O4l"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTb-g5-QLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="third_question" width="1018" height="804"/>
+    </resources>
+</document>

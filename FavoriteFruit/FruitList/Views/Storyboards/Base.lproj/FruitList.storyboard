@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N7a-R6-DkP">
+    <device id="ipad11_0rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fruit List Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FruitListController" customModule="FavoriteFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vk4-VU-CWa">
+                                <rect key="frame" x="16" y="90" width="1162" height="708"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="rrt-9M-ybn">
+                                        <rect key="frame" x="0.0" y="0.0" width="1162" height="572"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="TGj-Nz-yE0">
+                                                <rect key="frame" x="0.0" y="0.0" width="1162" height="169.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZ9-ur-5xx" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v7O-eH-umP">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKn-Aj-VZg" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="cherry"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さくらんぼ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E6-7h-eeP">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="b4H-Rp-9l1"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="v7O-eH-umP" firstAttribute="top" secondItem="gZ9-ur-5xx" secondAttribute="top" constant="12" id="Cqt-pe-nN0"/>
+                                                            <constraint firstItem="v7O-eH-umP" firstAttribute="leading" secondItem="gZ9-ur-5xx" secondAttribute="leading" constant="16" id="S2L-hO-GW6"/>
+                                                            <constraint firstAttribute="bottom" secondItem="v7O-eH-umP" secondAttribute="bottom" constant="12" id="YHt-fi-E1f"/>
+                                                            <constraint firstAttribute="trailing" secondItem="v7O-eH-umP" secondAttribute="trailing" constant="16" id="u0t-w0-QBP"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iM-Ps-MfC" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="298.5" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cI7-C8-kWq">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG1-53-exl" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="lemon"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レモン" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVa-1a-VED">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="41F-76-bpd"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="cI7-C8-kWq" secondAttribute="bottom" constant="12" id="0VI-rV-9IR"/>
+                                                            <constraint firstAttribute="trailing" secondItem="cI7-C8-kWq" secondAttribute="trailing" constant="16" id="4ji-eL-5VL"/>
+                                                            <constraint firstItem="cI7-C8-kWq" firstAttribute="leading" secondItem="7iM-Ps-MfC" secondAttribute="leading" constant="16" id="cxA-x3-Njt"/>
+                                                            <constraint firstItem="cI7-C8-kWq" firstAttribute="top" secondItem="7iM-Ps-MfC" secondAttribute="top" constant="12" id="gfr-ma-cJn"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRg-zK-bPA" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="597" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hhp-QT-nrX">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiO-qg-CS3" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="watermelon"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スイカ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iko-gU-VDr">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="t6M-EC-36P"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Hhp-QT-nrX" firstAttribute="top" secondItem="lRg-zK-bPA" secondAttribute="top" constant="12" id="0aa-g8-hRy"/>
+                                                            <constraint firstItem="Hhp-QT-nrX" firstAttribute="leading" secondItem="lRg-zK-bPA" secondAttribute="leading" constant="16" id="ehL-mu-D1d"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Hhp-QT-nrX" secondAttribute="trailing" constant="16" id="iOD-Ya-HKK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Hhp-QT-nrX" secondAttribute="bottom" constant="12" id="uF2-Kt-DgB"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyn-9j-SNg" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="895.5" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-F8-gr1">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-6S-Gmo" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="pineapple"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パイナップル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-Rh-QSq">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="yCg-Ew-M2n"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="7qe-F8-gr1" secondAttribute="bottom" constant="12" id="899-8b-KVw"/>
+                                                            <constraint firstItem="7qe-F8-gr1" firstAttribute="top" secondItem="Fyn-9j-SNg" secondAttribute="top" constant="12" id="G2V-oJ-O4u"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7qe-F8-gr1" secondAttribute="trailing" constant="16" id="wTb-dw-8Se"/>
+                                                            <constraint firstItem="7qe-F8-gr1" firstAttribute="leading" secondItem="Fyn-9j-SNg" secondAttribute="leading" constant="16" id="z2S-BT-eLk"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="klN-db-09H">
+                                                <rect key="frame" x="0.0" y="201.5" width="1162" height="169"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8a-Iy-A2U" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="266.5" height="169"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-FJ-OiJ">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggD-H2-eDW" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116"/>
+                                                                        <state key="normal" title="Button" image="banana"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バナナ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW2-Pu-miY">
+                                                                        <rect key="frame" x="0.0" y="124" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="6qw-qX-nBL"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="SQF-FJ-OiJ" secondAttribute="trailing" constant="16" id="Fbd-QL-uad"/>
+                                                            <constraint firstItem="SQF-FJ-OiJ" firstAttribute="leading" secondItem="O8a-Iy-A2U" secondAttribute="leading" constant="16" id="STJ-OM-RwU"/>
+                                                            <constraint firstAttribute="bottom" secondItem="SQF-FJ-OiJ" secondAttribute="bottom" constant="12" id="oc0-Ed-8FM"/>
+                                                            <constraint firstItem="SQF-FJ-OiJ" firstAttribute="top" secondItem="O8a-Iy-A2U" secondAttribute="top" constant="12" id="zbt-a1-hEI"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-Yo-ldp" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="298.5" y="0.0" width="266.5" height="169"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-mG-f9h">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSD-TD-a9y" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116"/>
+                                                                        <state key="normal" title="Button" image="apple"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="りんご" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3B-d4-7Fd">
+                                                                        <rect key="frame" x="0.0" y="124" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="TcU-U6-llI"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Ce1-mG-f9h" secondAttribute="trailing" constant="16" id="2ah-CF-hlC"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ce1-mG-f9h" secondAttribute="bottom" constant="12" id="4lL-zu-e5x"/>
+                                                            <constraint firstItem="Ce1-mG-f9h" firstAttribute="leading" secondItem="fIj-Yo-ldp" secondAttribute="leading" constant="16" id="bo4-sg-1BQ"/>
+                                                            <constraint firstItem="Ce1-mG-f9h" firstAttribute="top" secondItem="fIj-Yo-ldp" secondAttribute="top" constant="12" id="xYz-MH-JMW"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vua-j4-1S0" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="597" y="0.0" width="266.5" height="169"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gJY-Gh-QUc">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6L-0o-iKV" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116"/>
+                                                                        <state key="normal" title="Button" image="blueberry"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブルーベリー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afK-Vq-mwx">
+                                                                        <rect key="frame" x="0.0" y="124" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="dMj-As-MyX"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="gJY-Gh-QUc" firstAttribute="top" secondItem="vua-j4-1S0" secondAttribute="top" constant="12" id="T9M-7R-Bx2"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gJY-Gh-QUc" secondAttribute="bottom" constant="12" id="exc-UY-9t0"/>
+                                                            <constraint firstItem="gJY-Gh-QUc" firstAttribute="leading" secondItem="vua-j4-1S0" secondAttribute="leading" constant="16" id="tqz-sJ-tFI"/>
+                                                            <constraint firstAttribute="trailing" secondItem="gJY-Gh-QUc" secondAttribute="trailing" constant="16" id="vSt-4L-rL6"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lb3-Gr-RYC" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="895.5" y="0.0" width="266.5" height="169"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Whc-V0-0vg">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mre-QT-Eca" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116"/>
+                                                                        <state key="normal" title="Button" image="tomato"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="トマト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-kX-wr9">
+                                                                        <rect key="frame" x="0.0" y="124" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="9nB-nK-gwl"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Whc-V0-0vg" firstAttribute="leading" secondItem="Lb3-Gr-RYC" secondAttribute="leading" constant="16" id="E9j-qW-e2K"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Whc-V0-0vg" secondAttribute="bottom" constant="12" id="HNE-13-QBe"/>
+                                                            <constraint firstItem="Whc-V0-0vg" firstAttribute="top" secondItem="Lb3-Gr-RYC" secondAttribute="top" constant="12" id="fW5-uJ-hTN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Whc-V0-0vg" secondAttribute="trailing" constant="16" id="wOc-3W-09i"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="US7-Cp-fmO">
+                                                <rect key="frame" x="0.0" y="402.5" width="1162" height="169.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rev-U6-Nlr" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uHE-Nj-ER5">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqJ-ea-y8Y" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="orange"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オレンジ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxN-fe-D3f">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="qt1-Uv-bsr"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="uHE-Nj-ER5" secondAttribute="bottom" constant="12" id="Bet-Je-rxq"/>
+                                                            <constraint firstItem="uHE-Nj-ER5" firstAttribute="top" secondItem="rev-U6-Nlr" secondAttribute="top" constant="12" id="G8X-4P-W44"/>
+                                                            <constraint firstItem="uHE-Nj-ER5" firstAttribute="leading" secondItem="rev-U6-Nlr" secondAttribute="leading" constant="16" id="LyA-AP-Lg7"/>
+                                                            <constraint firstAttribute="trailing" secondItem="uHE-Nj-ER5" secondAttribute="trailing" constant="16" id="jks-Vw-VLE"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gd9-E3-BIq" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="298.5" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-Ex-xhf">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxQ-uO-p7R" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="grape"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ぶどう" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcb-fR-SbQ">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="soD-8G-OJh"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="9fB-Ex-xhf" firstAttribute="top" secondItem="gd9-E3-BIq" secondAttribute="top" constant="12" id="2HC-Ap-Z9s"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9fB-Ex-xhf" secondAttribute="trailing" constant="16" id="DqC-T0-Td8"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9fB-Ex-xhf" secondAttribute="bottom" constant="12" id="OC6-eN-CYw"/>
+                                                            <constraint firstItem="9fB-Ex-xhf" firstAttribute="leading" secondItem="gd9-E3-BIq" secondAttribute="leading" constant="16" id="wU3-Rh-yZT"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6n-bD-oOY" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="597" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7bt-nZ-eTY">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me8-SD-yPw" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="strawberry"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いちご" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZX-KT-aZo">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="BMl-sq-lig"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="7bt-nZ-eTY" firstAttribute="leading" secondItem="b6n-bD-oOY" secondAttribute="leading" constant="16" id="0w1-9I-rMB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="7bt-nZ-eTY" secondAttribute="bottom" constant="12" id="Dge-RJ-2GT"/>
+                                                            <constraint firstItem="7bt-nZ-eTY" firstAttribute="top" secondItem="b6n-bD-oOY" secondAttribute="top" constant="12" id="VjJ-Tf-PmX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7bt-nZ-eTY" secondAttribute="trailing" constant="16" id="rSz-hg-4Yu"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtB-gI-9xM" customClass="Container" customModule="FavoriteFruit" customModuleProvider="target">
+                                                        <rect key="frame" x="895.5" y="0.0" width="266.5" height="169.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-Cx-0OE">
+                                                                <rect key="frame" x="16" y="12" width="234.5" height="145.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZj-hg-Zfw" customClass="CustomButton" customModule="FavoriteFruit" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="116.5"/>
+                                                                        <state key="normal" title="Button" image="pear"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="imageViewContentMode">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ナシ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-sW-oa0">
+                                                                        <rect key="frame" x="0.0" y="124.5" width="234.5" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="21" id="gNb-Wz-6nE"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ZOH-Cx-0OE" firstAttribute="leading" secondItem="WtB-gI-9xM" secondAttribute="leading" constant="16" id="4eI-Js-1Hc"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZOH-Cx-0OE" secondAttribute="trailing" constant="16" id="EEW-jC-9L6"/>
+                                                            <constraint firstItem="ZOH-Cx-0OE" firstAttribute="top" secondItem="WtB-gI-9xM" secondAttribute="top" constant="12" id="K3Q-yD-OHr"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ZOH-Cx-0OE" secondAttribute="bottom" constant="12" id="olp-xH-ipN"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wz7-Zq-akl">
+                                        <rect key="frame" x="0.0" y="572" width="1162" height="136"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-gy-3ut">
+                                                <rect key="frame" x="172" y="17.5" width="818" height="101"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="74"/>
+                                                <state key="normal" title="すきなフルーツはどれ？">
+                                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="askFavoriteFruitButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PEZ-BB-t7J"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2Og-gy-3ut" firstAttribute="centerY" secondItem="wz7-Zq-akl" secondAttribute="centerY" id="DI5-Pz-Lwi"/>
+                                            <constraint firstItem="2Og-gy-3ut" firstAttribute="centerX" secondItem="wz7-Zq-akl" secondAttribute="centerX" id="eia-wB-gUD"/>
+                                            <constraint firstAttribute="height" constant="136" id="f3W-sG-9Il"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vk4-VU-CWa" secondAttribute="bottom" constant="16" id="GBy-iZ-RxG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vk4-VU-CWa" secondAttribute="trailing" constant="16" id="ctX-fq-mbp"/>
+                            <constraint firstItem="Vk4-VU-CWa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="l90-5n-7qc"/>
+                            <constraint firstItem="Vk4-VU-CWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zzW-Vx-A00"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gYJ-iQ-7fP">
+                        <barButtonItem key="leftBarButtonItem" title="                                    " id="WqZ-Ka-F13">
+                            <connections>
+                                <action selector="leftNavigationBarButtonDidTap:" destination="BYZ-38-t0r" id="mEG-8C-C8F"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="                                    " id="2b3-eF-b3i">
+                            <connections>
+                                <action selector="rightNavigationBarButtonDidTap:" destination="BYZ-38-t0r" id="X9U-Jg-9yj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.1457286432161" y="134.53237410071944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C47-4K-Itr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N7a-R6-DkP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gm3-wH-isX">
+                        <rect key="frame" x="0.0" y="24" width="1194" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2kv-Gc-Az7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEO-GR-eTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.60804020100502" y="134.53237410071944"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="45.343173980712891" height="45.343173980712891"/>
+        <image name="banana" width="512" height="512"/>
+        <image name="blueberry" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="cherry" width="46.080001831054688" height="46.080001831054688"/>
+        <image name="grape" width="44.792224884033203" height="44.792224884033203"/>
+        <image name="lemon" width="44" height="44"/>
+        <image name="orange" width="41.234897613525391" height="41.234897613525391"/>
+        <image name="pear" width="46.486759185791016" height="46.486759185791016"/>
+        <image name="pineapple" width="45.623764038085938" height="45.623764038085938"/>
+        <image name="strawberry" width="45.623764038085938" height="45.623764038085938"/>
+        <image name="tomato" width="41.327354431152344" height="41.327354431152344"/>
+        <image name="watermelon" width="40.376781463623047" height="40.376781463623047"/>
+    </resources>
+</document>
